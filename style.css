@@ -1,0 +1,117 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    background-image: url(https://cdn.wallpaperhub.app/cloudcache/b/d/7/6/4/b/bd764bb25d49a05105060185774ba14cd2c846f7.jpg);
+    background-size: cover;
+    align-items: center;
+    justify-content: center;
+}
+.chrome{
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    width: 300px;
+    height: 70%;
+    background-color: rgb(43, 43, 43);
+}
+.btns{
+    margin-top: 10px;
+    width: 90%;
+    margin-left: 5%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between ;
+}
+.stop{
+    background-color: red !important;
+}
+.action-btns{
+    display:  flex;
+    gap: 5px;
+}
+.action-btns .bttn{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white    ;
+    width: 50px;
+    border-radius: 5px;
+    height: 20px;
+    background-color: blueviolet;
+}
+.username{
+    color: pink;
+}
+.messages p{
+    color: white;
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+.chat{
+    overflow: scroll;
+    overflow-x: hidden;
+    margin-left: 5%;
+    width: 90%;
+    height: 64%;
+}
+.chat::-webkit-scrollbar {
+    display: none;
+}
+.man{
+    color: red !important;
+}
+.ttsform{
+    color: white;
+    margin-top: 10px;
+    border-radius: 10px;
+    border: 1px solid silver;
+    width: 95%;
+    margin-left: 2.5%;
+    height: 17%;
+}
+.ttsform .title{
+    padding: 10px;
+}
+.bttn{
+    user-select: none;
+}
+.bttn:active{
+    border: 1px solid black;
+}
+.ttsform input{
+    width: 90%;
+    margin-left: 5%;
+    background-color: rgb(43, 43, 43);
+    border: 1px solid rgba(143, 143, 143, 0.103);
+    color: silver;
+    font-family: Arial, Helvetica, sans-serif;
+}
+/* .ttsform input{
+    border: 3px solid pink;
+} */
+.silver{
+    color: silver;
+    padding-left: 5px;
+    padding-right: 5px;
+}
+
+@media screen and (max-width: 600px) {
+    .chrome{
+        border-top-left-radius: 10px;
+        border-top-right-radius: 10px;
+        width: 100vw;
+        height: 100vh;
+        background-color: rgb(43, 43, 43);
+    }
+    .chat {
+        overflow: scroll;
+        overflow-x: hidden;
+        margin-left: 5%;
+        width: 90%;
+        height: 70%;
+    }
+  }
